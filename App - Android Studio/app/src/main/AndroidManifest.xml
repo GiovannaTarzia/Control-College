@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ctrlcollege.ctrlcollege">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/ic_app"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".TelaInicial">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AltCadastro"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TelaLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TelaMenuPais"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DadosResponsavel"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelecionaAluno"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Situacao"
+            android:screenOrientation="portrait" />
+        <activity android:name=".AlteraSenha" />
+        <activity android:name=".AlteraDadosResp"></activity>
+    </application>
+
+</manifest>

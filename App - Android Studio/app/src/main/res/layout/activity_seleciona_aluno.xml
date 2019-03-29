@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/background2"
+    tools:context=".SelecionaAluno">
+
+    <Spinner
+        android:id="@+id/spinSelectAluno"
+        android:layout_width="323dp"
+        android:layout_height="42dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textSelectAluno"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/branco"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textSelectAluno"
+        android:layout_width="316dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/spinSelectSala"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Selecione o aluno:"
+        android:textColor="@color/branco"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textSelectSala"
+        android:layout_width="316dp"
+        android:layout_height="38dp"
+        android:layout_centerHorizontal="true"
+        android:text="Selecione a sala desejada:"
+        android:textColor="@color/branco"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinSelectSala"
+        android:layout_width="323dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/textSelectSala"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/branco"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@id/spinSelectAluno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Série do Aluno"
+        android:textColor="@color/branco"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btConfirmAluno"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tb_DadosAluno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_button"
+        android:text="Confirmar"
+        android:textColor="@color/branco" />
+
+    <TableLayout
+        android:id="@+id/tb_DadosAluno"
+        android:layout_width="319dp"
+        android:layout_height="201dp"
+        android:layout_below="@id/textView9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/table_borders">
+
+        <TableRow
+            android:id="@+id/row_sala"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/table_cells">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/table_cells"
+                android:gravity="center"
+                android:text="Sala"
+                android:textColor="@color/branco"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textSalaTabela"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/table_cells"
+                android:gravity="center"
+                android:textColor="@color/branco" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_periodo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/table_cells">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="113dp"
+                android:layout_height="50dp"
+                android:background="@drawable/table_cells"
+                android:gravity="center"
+                android:text="Série"
+                android:textColor="@color/branco"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textSerieTabela"
+                android:layout_width="206dp"
+                android:layout_height="50dp"
+                android:background="@drawable/table_cells"
+                android:gravity="center"
+                android:textColor="@color/branco" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_serie"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/table_cells">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/table_cells"
+                android:gravity="center"
+                android:text="Período"
+                android:textColor="@color/branco"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textPeriodoTabela"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/table_cells"
+                android:gravity="center"
+                android:textColor="@color/branco" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_situacao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/table_cells">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/table_cells"
+                android:gravity="center"
+                android:text="Situação do Aluno"
+                android:textColor="@color/branco"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textSitTabela"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/table_cells"
+                android:gravity="center"
+                android:textColor="@color/branco" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

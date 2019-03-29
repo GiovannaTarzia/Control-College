@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".TelaLogin">
+
+    <ImageView
+        android:id="@+id/logoLogin"
+        android:layout_width="285dp"
+        android:layout_height="82dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <EditText
+        android:id="@+id/textID"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logoLogin"
+        android:layout_marginTop="70dp"
+        android:drawableStart="@drawable/ic_user"
+        android:ems="10"
+        android:hint="ID ou Email"
+        android:inputType="textPersonName"
+        android:textColor="@color/branco"
+        android:textColorHint="@color/cinza"
+        android:theme="@style/TextBox" />
+
+    <EditText
+        android:id="@+id/textPass"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textID"
+        android:layout_centerHorizontal="true"
+        android:drawableStart="@drawable/ic_pass"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:textColor="@color/branco"
+        android:textColorHint="@color/cinza"
+        android:theme="@style/TextBox" />
+
+    <Button
+        android:id="@+id/botaoLogin"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rounded_button"
+        android:text="Login"
+        android:textColor="@color/branco" />
+
+</RelativeLayout>

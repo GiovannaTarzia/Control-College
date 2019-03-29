@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:gravity="center"
+    tools:context=".Situacao">
+
+    <Spinner
+        android:id="@+id/spinnerAluno"
+        android:layout_width="343dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/branco"
+        android:gravity="center"
+        android:textAlignment="center" />
+
+    <ScrollView
+        android:id="@+id/scrollTable"
+        android:layout_width="352dp"
+        android:layout_height="450dp"
+        android:layout_alignParentStart="false"
+        android:layout_below="@id/spinnerAluno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/scrollTable"
+            android:background="@drawable/table_borders">
+
+            <TableRow
+                android:id="@+id/tbTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textTbMateria"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Matéria"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalAulas"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Aulas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalFaltas"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Faltas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbFrequência"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Frequência"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tbMateria1"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textTbMateria1"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Matéria"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalAulas1"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="right|center"
+                    android:text="Aulas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalFaltas1"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Faltas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbFrequência1"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Frequência"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tbMateria2"
+
+                android:layout_width="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/textTbMateria2"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Matéria"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalAulas2"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Aulas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalFaltas2"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Faltas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbFrequência2"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Frequência"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tbMateria3"
+
+                android:layout_width="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/textTbMateria3"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Matéria"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalAulas3"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Aulas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalFaltas3"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Faltas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbFrequência3"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Frequência"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tbMateria4"
+
+                android:layout_width="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/textTbMateria4"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Matéria"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalAulas4"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Aulas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalFaltas4"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Faltas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbFrequência4"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Frequência"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tbMateria5"
+
+                android:layout_width="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/textTbMateria5"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Matéria"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalAulas5"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Aulas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalFaltas5"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Faltas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbFrequência5"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Frequência"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tbMateria6"
+
+                android:layout_width="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/textTbMateria6"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Matéria"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalAulas6"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Aulas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalFaltas6"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Faltas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbFrequência6"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Frequência"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tbMateria7"
+
+                android:layout_width="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/textTbMateria7"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Matéria"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalAulas7"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Aulas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalFaltas7"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Faltas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbFrequência7"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Frequência"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tbMateria8"
+
+                android:layout_width="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/textTbMateria8"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Matéria"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalAulas8"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Aulas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalFaltas8"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Faltas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbFrequência8"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Frequência"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tbMateria9"
+
+                android:layout_width="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/textTbMateria9"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Matéria"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalAulas9"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Aulas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalFaltas9"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Faltas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbFrequência9"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Frequência"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tbMateria10"
+
+                android:layout_width="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/textTbMateria10"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Matéria"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalAulas10"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Aulas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalFaltas10"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Faltas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbFrequência10"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Frequência"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tbMateria11"
+
+                android:layout_width="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/textTbMateria11"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Matéria"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalAulas11"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Aulas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalFaltas11"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Faltas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbFrequência11"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Frequência"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tbMateria12"
+
+                android:layout_width="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/textTbMateria12"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Matéria"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalAulas12"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Aulas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalFaltas12"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Faltas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbFrequência12"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Frequência"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tbMateria13"
+
+                android:layout_width="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/textTbMateria13"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Matéria"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalAulas13"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Aulas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbTotalFaltas13"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Faltas"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+                <TextView
+                    android:id="@+id/textTbFrequência13"
+                    android:layout_width="88dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/table_cells"
+                    android:gravity="center"
+                    android:text="Frequência"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco" />
+
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>

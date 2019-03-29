@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background2"
+    android:gravity="center"
+    android:theme="@style/TextBox"
+    tools:context=".AlteraDadosResp">
+
+    <EditText
+        android:id="@+id/txUFResp"
+        android:layout_width="124dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/txEmailResp"
+        android:layout_alignRight="@+id/txCidadeResp"
+        android:layout_alignTop="@+id/txCidadeResp"
+        android:layout_below="@id/txBairroResp"
+        android:layout_centerHorizontal="true"
+        android:autoText="false"
+        android:background="@drawable/table_borders"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="UF"
+        android:inputType="textCapCharacters"
+        android:paddingLeft="10dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/branco"
+        android:textColorHint="@color/cinza" />
+
+    <EditText
+        android:id="@+id/txEmailResp"
+        android:layout_width="328dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/spinnerAluno2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:autoText="false"
+        android:background="@drawable/table_borders"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/branco"
+        android:textColorHint="@color/cinza" />
+
+    <EditText
+        android:id="@+id/txEnderecoResp"
+        android:layout_width="328dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/txEmailResp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:autoText="false"
+        android:background="@drawable/table_borders"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="Endereço"
+        android:inputType="textCapCharacters"
+        android:paddingLeft="10dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/branco"
+        android:textColorHint="@color/cinza" />
+
+    <EditText
+        android:id="@+id/txBairroResp"
+        android:layout_width="328dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/txEnderecoResp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:autoText="false"
+        android:background="@drawable/table_borders"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="Bairro"
+        android:inputType="textCapCharacters"
+        android:paddingLeft="10dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/branco"
+        android:textColorHint="@color/cinza" />
+
+    <EditText
+        android:id="@+id/txCidadeResp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/txEmailResp"
+        android:layout_below="@id/txBairroResp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:autoText="false"
+        android:background="@drawable/table_borders"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="Cidade"
+        android:inputType="textCapCharacters"
+        android:paddingLeft="10dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/branco"
+        android:textColorHint="@color/cinza" />
+
+
+    <EditText
+        android:id="@+id/txNumeroResp"
+        android:layout_width="162dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/txEmailResp"
+        android:layout_below="@id/txCidadeResp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/table_borders"
+        android:ems="10"
+        android:hint="Número"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/branco"
+        android:textColorHint="@color/cinza" />
+
+    <EditText
+        android:id="@+id/txComplementoResp"
+        android:layout_width="162dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/txEmailResp"
+        android:layout_alignTop="@+id/txNumeroResp"
+        android:background="@drawable/table_borders"
+        android:ems="10"
+        android:hint="Complemento"
+        android:inputType="textCapCharacters"
+        android:paddingLeft="10dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/branco"
+        android:textColorHint="@color/cinza" />
+
+    <Button
+        android:id="@+id/bt_SalvarResp"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignRight="@+id/txEmailResp"
+        android:layout_alignTop="@+id/bt_EditarResp"
+        android:layout_marginBottom="50dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_button"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="Salvar"
+        android:textColor="@color/branco" />
+
+    <Button
+        android:id="@+id/bt_EditarResp"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txEmailResp"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/txNumeroResp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_button"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="Editar"
+        android:textColor="@color/branco" />
+
+</RelativeLayout>

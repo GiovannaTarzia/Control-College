@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:gravity="center"
+    tools:context=".DadosResponsavel">
+
+    <Spinner
+        android:id="@+id/spinSelectResp"
+        android:layout_width="295dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardFoto"
+        android:layout_width="284dp"
+        android:layout_height="284dp"
+        android:layout_below="@id/spinSelectResp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:cardElevation="40dp">
+
+        <ImageView
+            android:id="@+id/imgResp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_logo" />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/textNomeResp"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardFoto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Nome do Responsável"
+        android:textColor="@color/branco"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textTipoResp"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textNomeResp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Tipo do Responsável"
+        android:textColor="@color/branco"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btRetiraAluno"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTipoResp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_button"
+        android:text="Retirar Aluno"
+        android:textColor="@color/branco" />
+</RelativeLayout>

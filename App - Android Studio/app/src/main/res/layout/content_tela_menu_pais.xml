@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:orientation="vertical"
+    android:gravity="center"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".TelaMenuPais"
+    tools:showIn="@layout/app_bar_tela_menu_pais">
+
+    <ImageView
+        android:id="@+id/logo_menu"
+        android:layout_width="341dp"
+        android:layout_height="82dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="341dp"
+        android:layout_height="240dp"
+        android:layout_below="@id/logo_menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_dadosAluno"
+            android:layout_width="170dp"
+            android:layout_height="174dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/trasparente"
+            app:cardElevation="0dp"
+            app:layout_column="1"
+            app:layout_row="0">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ic_dadosAluno"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="33dp"
+                    app:srcCompat="@drawable/ic_dados_aluno" />
+
+                <TextView
+                    android:id="@+id/textDadosAluno"
+                    android:layout_width="97dp"
+                    android:layout_height="56dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:text="Dados do Aluno"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_frequência"
+            android:layout_width="170dp"
+            android:layout_height="174dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/trasparente"
+            app:cardElevation="0dp"
+            app:layout_column="0"
+            app:layout_row="0">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ic_frequencia"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="34dp"
+                    app:srcCompat="@drawable/ic_frequencia" />
+
+                <TextView
+                    android:id="@+id/textFrequencia"
+                    android:layout_width="146dp"
+                    android:layout_height="56dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:text="Relatório de Frequência"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </android.support.v7.widget.GridLayout>
+
+</RelativeLayout>
